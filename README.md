@@ -1,15 +1,38 @@
 # Embodied Model Architecture Atlas
 
-具身模型结构图谱的公开基础版，用来帮助读者从架构、模块接口、训练流程和部署流程进入具身智能论文。
+An interactive, source-linked map for reading embodied-AI model architectures.
 
-在线阅读：<https://moquansha.github.io/embodied-model-architecture-atlas/>
+**Live demo**  [English](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html) · [中文](https://moquansha.github.io/embodied-model-architecture-atlas/)
 
-English orientation edition：<https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html>
+The atlas currently covers **38 representative models and methods across 26 architecture tags**. Each entry connects a simplified data flow to the original paper figure, interface explanation, training/deployment order, reported results, limitations, and implementation or project links.
 
-英文版与中文版使用同一套页面骨架和交互逻辑，提供英文导航、分类、检索、详情标签、图片放大和模型对比，覆盖同一批 38 个模型与方法条目。公式、数据集、消融实验和最终结论仍应以对应原论文为准。
+This is an orientation atlas and a community-maintained starting point, not an exhaustive literature review or a cross-paper performance leaderboard. Please use the linked original papers for complete equations, datasets, ablations, and evidence boundaries. Figure copyright remains with the original authors; the categorization and explanatory notes are provided for educational use.
 
-当前版本包含 38 个模型与方法条目。每个条目提供结构图或方法图、模块拆解、图中箭头的阅读顺序、训练与部署区别、结果说明和局限。图谱是持续扩展的入门索引，不是完整文献库，也不构成跨论文性能排名。想获得完整方法、实验设置和结论边界，请继续阅读对应原论文。
+## Quick tour
 
-页面是单文件静态 HTML，使用 hash 路由、搜索、分类、模型横向对比和图片放大，不需要构建工具或后端。论文图片按照页面中的来源链接从 arXiv 或作者官方仓库加载，因此在线阅读需要网络连接。
+- Browse the [English interactive atlas](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html).
+- Choose a family such as [VLM-Backboned VLA](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html#/category/backbone), [Predict-then-Act WAM](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html#/category/predict), or [Diffusion / Flow Action Policy](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html#/category/diffusion).
+- Open a model detail page, follow the figure reading guide, and compare up to three entries.
+- Use the linked paper and project sources to continue the full reading.
 
-图片版权归原作者。模型归类和解释属于本图谱的学习性整理，欢迎通过 Issue 提出遗漏、错误或补充建议。
+## Why this exists
+
+Embodied models are often described through overlapping labels such as VLA, WAM, hierarchical, asynchronous, diffusion, and world model. This atlas separates those labels into explicit design dimensions so that readers can ask what enters the model, what intermediate state is passed between modules, what is trained, and what actually runs in the robot control loop.
+
+## Contributing
+
+Missing a well-known work, a source figure, or an important boundary? Please open an issue using the relevant template, or start a discussion. Small corrections are welcome, especially when they include a paper section, figure number, or official implementation link. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Citation
+
+If the atlas is useful in a paper, report, lecture, or project, please cite the repository and include the version or commit you used. See [CITATION.cff](CITATION.cff).
+
+## Local use
+
+The site is a single-file static HTML application with hash routing, search, category browsing, model comparison, and figure zoom. Download `index-en.html` or `index.html` and open it in a modern browser. Embedded family figures work offline; original paper figures and external links require an internet connection.
+
+## 中文简介
+
+具身模型结构图谱是一个面向具身智能论文阅读的交互式索引，目前覆盖 38 个模型与方法、26 个结构标签。页面提供分类导航、搜索、结构与接口拆解、训练和部署顺序、论文原图、来源链接及横向对比。
+
+中文入口：[在线阅读](https://moquansha.github.io/embodied-model-architecture-atlas/)。图谱用于抛砖引玉，不替代原论文，也不构成跨论文性能排名。

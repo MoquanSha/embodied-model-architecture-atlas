@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this atlas, please cite the repository and include the version or commit used."
+title: "Embodied Model Architecture Atlas"
+abstract: "An interactive, source-linked map of embodied-AI model architectures, interfaces, training and deployment flows, original paper figures, and limitations."
+type: software
+repository-code: "https://github.com/MoquanSha/embodied-model-architecture-atlas"
+url: "https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html"
+version: "0.1.0"
+date-released: 2026-09-08
+authors:
+  - family-names: "MoquanSha"
+    affiliation: "Independent project maintainer"

@@ -1,0 +1,26 @@
+name: Correction
+description: Report an error in a model entry, category, translation, result, or figure attribution.
+title: "[Correction] "
+labels: ["bug"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or model
+      description: Link the page or give the model/category name.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should change
+      description: Describe the current wording and the proposed correction.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include a paper section/figure, official link, or other verifiable source.
+    validations:
+      required: true

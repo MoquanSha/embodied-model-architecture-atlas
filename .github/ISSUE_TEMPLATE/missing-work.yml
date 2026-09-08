@@ -1,0 +1,24 @@
+name: Missing work
+description: Suggest an influential embodied-AI paper or project that should be added.
+title: "[Missing work] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: paper
+    attributes:
+      label: Paper or project
+      description: Give the title and an arXiv, DOI, or official project URL.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs
+      description: Which architecture family or design dimension does it clarify?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Figure or section source
+      description: Add the relevant figure, table, or section if available.
