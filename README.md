@@ -2,7 +2,7 @@
 
 An interactive, source-linked map for reading embodied-AI model architectures.
 
-**Live demo**  [English](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html) · [中文](https://moquansha.github.io/embodied-model-architecture-atlas/)
+**Live demo**  [English](https://moquansha.github.io/embodied-model-architecture-atlas/index-en.html) · [中文](https://moquansha.github.io/embodied-model-architecture-atlas/) · [Hugging Face Space](https://huggingface.co/spaces/shamoquan/embodied-model-architecture-atlas)
 
 The atlas currently covers **38 representative models and methods across 26 architecture tags**. Each entry connects a simplified data flow to the original paper figure, interface explanation, training/deployment order, reported results, limitations, and implementation or project links.
 
